@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Web Design</title>
+    <!--Getting website font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--Linking the script and the style together-->
+	<link rel="stylesheet" href="./styles.css">
+	<script src="./scripts.js"></script>
+    <!--Adding favorite icon to come up at the top of the search-->
+	<link rel="icon" type="image/jpg" href="./imgs/favicon.jpg">
+</head>
+<body>
+	<header>
+        <!--What holds the logo-->
+		<a href="#" class="logo-holder">
+            <!--Logo Initial-->
+			<div class="logo">U</div>
+            <!--What show Beside the Logo-->
+			<div class="logo-text">Uba's Portfolio</div>
+		</a>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="mailto:hello@adriantwarog.com" class="button">Contact Me</a>
+				</li>
+			</ul>
+            <!--To bring back what dissapear during the mobile view-->
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+	<main>
+		<section class="hero container">
+			<div class="hero-blue">
+				<div>
+                    <!--Intro of myself-->
+					<h1><small>Hi I'm</small>
+						Onyemaobi Ubadire
+					</h1>
+					<p>
+						Design and Developer in the United State who is a full time chemical engineer but love to use HTML, CSS, javascript, and Python to solve problems accross the web. <span>You can use the UZI chatbox to ask me any question of your choice.</span>
+					</p>
+                    <!--Call to action to access my resume-->
+					<div class="call-to-action">
+						<a href="https://drive.google.com/file/d/1n2NPycEz27xKUvKzQuPQIoNWVr85ZalJ/view?usp=drive_link" class="button black">
+							View Resume
+						</a>
+						<a href="mailto:onyemaobiubadireluke@gmail.com" class="button white">
+							Contact Me
+						</a>
+					</div>
+                    <!--Adding all my socials-->
+					<div class="social-links">
+						<a href="https://github.com/code50/90230067">
+							<img src="./imgs/github.png" alt="GitHub" width="48" />
+						</a>
+						<a href="https://www.linkedin.com/in/ubadire-onyemaobi-a78123191/">
+							<img src="./imgs/linkedin.webp" alt="LinkedIn" width="48" />
+						</a>
+                        <a href="https://www.instagram.com/onyemaobiuba/">
+							<img src="./imgs/insta.jpg" alt="Instagram" width="48" />
+						</a>
+                        <a href="https://www.facebook.com/Ubadire01/">
+							<img src="./imgs/facebook.png" alt="facebook" width="48" />
+						</a>
+					</div>
+				</div>
+			</div>
+            <!--Adding my image-->
+			<div class="hero-yellow">
+				<img src="./imgs/hero-image.png" alt="Onyemaobi Ubadire" width="100%" />
+			</div>
+		</section>
+		<section class="logos container">
+			<div class="marquee">
+				<div class="track">
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+					<img src="./imgs/css.png" alt="CSS" width="128" />
+					<img src="./imgs/javascript.png" alt="JS" width="128" />
+					<img src="./imgs/matlab.png" width="128" alt="MATLAB" />
+					<img src="./imgs/react.png" width="128" alt="React" />
+					<img src="./imgs/c.png" width="128" alt="C++" />
+					<img src="./imgs/azure.png" width="128" alt="Azure" />
+					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
+					<img src="./imgs/python.png" width="128" alt="Python" />
+					<img src="./imgs/aspen.png" width="128" alt="Aspen Plus" />
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+					<img src="./imgs/css.png" alt="CSS" width="128" />
+					<img src="./imgs/javascript.png" alt="JS" width="128" />
+					<img src="./imgs/matlab.png" width="128" alt="MATLAB" />
+					<img src="./imgs/react.png" width="128" alt="React" />
+					<img src="./imgs/C.png" width="128" alt="C++" />
+					<img src="./imgs/azure.png" width="128" alt="Azure" />
+					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
+					<img src="./imgs/python.png" width="128" alt="Python" />
+					<img src="./imgs/aspen.png" width="128" alt="Aspen Plus" />
+				</div>
+			</div>
+		</section>
+		<section id="skills" class="skills container">
+			<h2>
+				<small>About Me</small>
+				Skills
+			</h2>
+			<div class="holder-blue">
+				<div class="left-column">
+					<h3>Frontend</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+					</ul>
+					<h3>Backend</h3>
+					<ul>
+						<li>Python</li>
+						<li>Java</li>
+						<li>PHP</li>
+					</ul>
+					<h3>Chemical Engineer</h3>
+					<ul>
+						<li>PSV's Calcs</li>
+						<li>P&IDs</li>
+						<li>Flarenet</li>
+						<li>Aspen Plus</li>
+						<li>MATLAB</li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<h3>A bit about me</h3>
+					<p>
+						Onyemaobi Ubadire is a dedicated professional with expertise in both software engineering and chemical engineering. In software engineering, Onyemaobi excels at developing innovative solutions, including creating trading bots using supply and demand principles. As a chemical engineer, Onyemaobi leverages a deep understanding of chemical processes to optimize and innovate within the industry, combining analytical skills and technical knowledge to drive impactful results in both fields.	
+					</p>
+					<p>
+						I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development.  I am concurrently involved in designing Piping and Instrumentation Diagrams (P&IDs) for LNG plants.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="work-experience container">
+			<h2>
+				<small>Recent</small>
+				Work Experience
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/bechtel.jpeg" alt="Workplace 1 - Bechtel Cooperation" width="100%" />
+							<figcaption>
+								Workplace - 1 Bechtel Cooperation
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Chemical Engineer-Project Engineering</h3>
+					<div>2023-current</div>
+					<p>Design P&IDs for Liquified Natural Gas (LNG) plants.</p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/NSF.png" alt="Workplace 2 - National Science Foundation" width="100%" />
+							<figcaption>
+								Workplace - National Science Foundation(NSF)
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Research Analyst</h3>
+					<div>2021-2023</div>
+					<p>Synthesize Absorbent for Removal of Arsenic and NORM from water with Novel Clay Adsorbent Developed by CAMD. </p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/Freelance.jpg" alt="Workplace 3 - Freelance" width="100%" />
+							<figcaption>
+								Workplace - Freelance
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Freelance</h3>
+					<div>2018-current</div>
+					<p>Design Flyers and Logo for different Private Individuals and Start-ups.</p>
+				</article>
+				
+			</div>
+		</section>
+		<section id="projects" class="bento container">
+			<h2>
+				<small>
+					Previous
+				</small>
+				Completed Projects
+			</h2>
+			<div class="bento-grid">
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-1.png" alt="Runoff_CS50" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-2.jpg" alt="AICHE" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-3.jpg" alt="Trading_Bot" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-5.jpg" alt="JAVA_SQL_movie_booking" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-6.jpg" alt="Calculator" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/Bento-7.png" alt="DNA" width="100%" />
+				</a>
+			</div>
+		</section>
+		<section class="chatbot container">
+			<h2>
+				<small>
+					Talk to me
+				</small>
+				Uzibot
+			</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<h3>Azure AI Chatbot</h3>
+					<p>I've put together a chatbot here which knows all my skills, work experience and has a copy of my CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what I've done.</p>
+					<p>You can also download my resume here if you want to take a look at it.  I'm currently looking for new opportunities so if you have a project you think I'd be a good fit for, please get in touch!</p>
+					<a href="https://drive.google.com/file/d/1n2NPycEz27xKUvKzQuPQIoNWVr85ZalJ/view?usp=drive_link" class="button black">Download Resume</a>
+				</div>
+				<div class="chat-box">
+					<div class="scroll-area">
+						<ul id="chat-log">
+							<li>
+								<span class="avatar bot">UZI</span>
+								<div class="message">
+									"Hi, I'm UZI, your friendly chatbot for exploring this portfolio and CV. How can I assist you today?
+								</div>
+							</li>
+							<li>
+								<span class="avatar user">User</span>
+								<div class="message">
+									I have a question to ask you about this resume
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="chat-message">
+						<input type="text" placeholder="Hey Uba, what skills are you best at?">
+						<button class="button black">Send</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
+
+
+
